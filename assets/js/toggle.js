@@ -10,5 +10,9 @@ function toggle(){
 
 
 function researchbg(img) {
+    try {
     document.getElementById("researchbg").style.backgroundImage = 'url('+ img + ')';
+    } catch (error) {
+        console.log(error)
+    }
 }

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
-<body>
+<body onload="onloadBody();" onresize="onloadBody();">
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav" onmouseover="researchbg(&#39;Slide1.jpeg&#39;);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span><img src="assets/img/ATM-ezgif.com-video-to-gif-converter.gif" style="width: 250px;"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -38,22 +38,22 @@
         </div>
     </nav>
     <section class="py-5" style="padding-top: 0rem !important;">
-        <header id="researchbg" class="bg-primary-gradient" style="background-image: URL(&quot;assets/img/Slide1.jpeg&quot;);background-repeat: no-repeat;background-size: 100%;background-attachment: fixed;background-position: center;background-repeat: no-repeat;min-height: 95vh;transition: background 0.5s ease;">
+        <header id="researchbg" class="bg-primary-gradient" style="background-image: URL(&quot;assets/img/Slide1.jpeg&quot;);background-size: 100%;background-repeat: no-repeat;transition: background 0.5s ease;">
             <div class="container pt-4 pt-xl-5">
                 <div class="row pt-5" style="padding-top: 0px!important;">
-                    <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-md-start mx-auto" id="left-side" onmouseover="researchbg(&#39;Slide2.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-md-start mx-auto" id="left-side" onmouseover="researchbg(&#39;Slide2.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
                         <div class="text-center">
-                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 1rem;min-height: 95vh;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h6>
+                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 1rem;min-height: inherit;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h6>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-md-start mx-auto" id="middle-side" onmouseover="researchbg(&#39;Slide3.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-md-start mx-auto" id="middle-side" onmouseover="researchbg(&#39;Slide3.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
                         <div class="text-center">
-                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 2rem;min-height: 95vh;"><br><br><br><br><br><br><br><br><br></h6>
+                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 2rem;min-height: auto;"><br><br><br><br><br><br><br><br><br></h6>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-md-start mx-auto" id="right-side" onmouseover="researchbg(&#39;Slide4.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 offset-sm-1 text-center text-md-start mx-auto" id="right-side" onmouseover="researchbg(&#39;Slide4.jpeg&#39;);" onclick="researchbg(&#39;Slide1.jpeg&#39;);">
                         <div class="text-center">
-                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 1rem;min-height: 95vh;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h6>
+                            <h6 class="fw-bold" style="transform: perspective(40px);text-align: left;font-size: 1rem;min-height: auto;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h6>
                         </div>
                     </div>
                     <div class="col-12 col-lg-10 mx-auto">
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col-md-4 mb-5"><img class="rounded img-fluid shadow" src="assets/img/bond%20selective%20chem.jpg"></div>
+                <div class="col-md-4 mb-5"><img class="rounded img-fluid shadow" src="assets/img/manupulate.png"></div>
                 <div class="col-md-8 d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
                         <h5 class="fw-bold"><strong>Macroscopic Manipulation of Matter with Quantized Light</strong></h5>
@@ -103,11 +103,19 @@
                         <p class="text-muted mb-4" style="text-align: justify;">In plasmonic chemistry, illuminated metal nanoparticles can significantly modify chemical reactivity. However, despite decades of research, the field suffers from a poor mechanistic understanding of the fundamental principles governing plasmonic catalysis.&nbsp;<br><br>We are interested in developing a general quantum dynamics framework that makes no <em>a priori</em> mechanistic assumptions&nbsp; combining the tools of quantum chemistry,&nbsp;quantum dynamics and quantum optics. Our goal is discovering new strategies for quantum sensing and new chemical reactivities.</p>
                     </div>
                 </div>
+                <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h5 class="fw-bold" style="text-align: center;"><em><span style="font-weight: normal !important;">Quantum Dynamics between two Mirrors!</span></em></h5>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12"><img src="assets/img/research-back.jpg" width="426" height="150" style="width: inherit;height: auto;"></div>
+                <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h4 class="fw-bold">Some Previous Works</h4>
+                </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col-md-4 mb-5" style="background-image: URL(&quot;assets/img/Slide2.jpeg&quot;);visibility: hidden;"></div>
-                <div class="col-md-4 mb-5" style="background-image: URL(&quot;assets/img/Slide3.jpeg&quot;);visibility: hidden;"></div>
-                <div class="col-md-4 mb-5" style="background-image: URL(&quot;assets/img/Slide4.jpeg&quot;);visibility: hidden;"></div>
+                <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5"><img src="assets/img/research1.jpg" style="width: 100%;"></div>
+                <div class="col-xxl-4" style="background-image: URL('assets/img/Slide2.jpeg');visibility: hidden;"></div>
+                <div class="col-xxl-4" style="background-image: URL('assets/img/Slide3.jpeg');visibility: hidden;"></div>
+                <div class="col-xxl-4" style="background-image: URL('assets/img/Slide4.jpeg');visibility: hidden;"></div>
             </div>
         </div>
     </section>

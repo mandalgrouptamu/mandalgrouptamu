@@ -37,3 +37,13 @@ function onAgree(){
 }
 
 
+
+function onloadBody(){
+    document.getElementById("researchbg").style['background-position'] = '0px' + ' -' + document.getElementById('mainNav').getBoundingClientRect().height + 'px';
+    document.getElementById("researchbg").style.height = window.innerWidth * 0.5626 + "px";
+}
+
+
+function onLoadMainPage(){
+    document.getElementById('mainBackground').style.height = window.innerHeight -  document.getElementById('mainNav').getBoundingClientRect().height + "px";
+}

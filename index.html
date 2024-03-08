@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
-<body>
+<body onload="onLoadMainPage()">
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav" onmouseover="researchbg(&#39;Slide1.jpeg&#39;);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span><img src="assets/img/ATM-ezgif.com-video-to-gif-converter.gif" style="width: 250px;"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -39,12 +39,12 @@
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient" style="background-image: URL(&quot;assets/img/IMG_3018.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;height: 100%;">
+    <header id="mainBackground" class="bg-primary-gradient" style="background-image: URL(&quot;assets/img/img_1547-copy_52344250740_o.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
         <div class="container pt-4 pt-xl-5">
             <div class="row pt-5">
                 <div class="col-md-8 col-lg-7 col-xl-7 col-xxl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h2 class="fw-bold" style="transform: perspective(40px);"><br><br><br><br><br><br><br><br><br><br><br><span style="font-weight: normal !important; background-color: rgb(254, 202, 87);">&nbsp;Howdy to Mandal Research Group!&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="color: rgb(70, 0, 0); background-color: rgb(254, 202, 87);">(Starting Fall 24)</span><span style="color: rgb(70, 0, 0); background-color: rgb(255, 199, 0);">&nbsp;&nbsp;</span><br><br></h2>
+                        <h2 class="fw-bold" style="transform: perspective(40px);"><br><br><br><br><br><br><br><br><br><br><br><br><br><span style="font-weight: normal !important; background-color: rgb(254, 202, 87);">&nbsp;Howdy to Mandal Research Group!&nbsp; &nbsp; &nbsp;</span><span style="color: rgb(70, 0, 0); background-color: rgb(254, 202, 87);">(Starting Fall 24)</span><span style="color: rgb(70, 0, 0); background-color: rgb(255, 199, 0);">&nbsp;</span><br><br><br><br></h2>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
@@ -60,7 +60,7 @@
         <div class="row" data-bs-target="#navcol-1" data-bs-smooth-scroll="true">
             <div class="col-md-8 col-xl-7 col-xxl-9 text-center mx-auto">
                 <h2 class="fw-bold"><span style="color: rgb(70, 0, 0);">Research at the Mandal Group</span></h2>
-                <h4 class="fw-bold">Shedding Light on Quantum Materials:<br>Solar Energy&nbsp;Conversion&nbsp;to Quantum Information Science<br><br><em><span style="font-weight: normal !important; color: rgb(86, 86, 86);">We combine the tools of Theoretical Chemistry, Quantum Optics and Quantum Dynamics to understand and exploit exotic physical and chemical phenomena enabled by the quantum mechanical interactions of light and matter.&nbsp;</span></em><br><br></h4><button class="btn btn-primary shadow" type="button" style="background-color: #460000;border-color: #440000;width: 50%;margin-bottom: 2rem;">Learn more</button>
+                <h4 class="fw-bold">Shedding Light on Quantum Materials:<br>Solar Energy&nbsp;Conversion&nbsp;to Quantum Information Science<br><br><em><span style="font-weight: normal !important; color: rgb(86, 86, 86);">We combine the tools of Theoretical Chemistry, Quantum Optics and Quantum Dynamics to understand and exploit exotic physical and chemical phenomena enabled by the quantum mechanical interactions of light and matter.&nbsp;</span></em><br><br></h4><button class="btn btn-primary shadow" type="button" style="background-color: #460000;border-color: #440000;width: 50%;margin-bottom: 2rem;" onclick="location.href=&#39;./Research.html&#39;">Learn more</button>
             </div>
         </div>
         <div class="container">
