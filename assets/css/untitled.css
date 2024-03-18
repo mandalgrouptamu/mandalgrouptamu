@@ -9,6 +9,17 @@
   box-shadow: 0 4px 8px 0 rgba(188, 254, 6, 0.2), 0 6px 20px 0 rgba(188, 254, 6, 0.19);
 }
 
+#nanophotonics {
+  color: #000000;
+  border-color: #000000;
+}
+
+#nanophotonics:hover {
+  color: #ffffff;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0 4px 8px 0 rgba(214, 214, 214, 0.2), 0 6px 20px 0 rgba(167, 167, 167, 0.19);
+}
+
 #jchemphys {
   color: #0051b9;
   border-color: #0051b9;
