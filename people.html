@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
-<body>
+<body onload="blurCards(&#39;col-md-4&#39;);">
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav" onmouseover="researchbg(&#39;Slide1.jpeg&#39;);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span><img src="assets/img/ATM-ezgif.com-video-to-gif-converter.gif" style="width: 250px;"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col-md-4 mb-4 card">
+                <div class="col-md-4 mb-4 card bwhover">
                     <div><a href="#"><img class="rounded img-fluid shadow w-100 fit-cover" src="assets/img/Arkajit%20Mandal.png" style="margin-top: 1rem;width: 100% !important;"></a>
                         <div class="py-4" style="text-align: center;"><span class="badge bg-primary mb-2" style="background-color: #460000 !important;">Principal Investigator</span>
                             <h4 class="fw-bold" style="text-align: center;">Arkajit Mandal</h4>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 bwhover">
                     <div><a href="#"><img class="rounded img-fluid shadow w-100 fit-cover" src="assets/img/Screenshot%202024-02-01%20at%206.25.26 AM.png" style="margin-top: 1rem;width: 100% !important;"></a>
                         <div class="py-4"><span class="badge bg-primary mb-2" style="background-color: #460000 !important;">Postdoctoral Researcher</span>
                             <h4 class="fw-bold">Open Positions</h4>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 bwhover">
                     <div><a href="#"><img class="rounded img-fluid shadow w-100 fit-cover" src="assets/img/Screenshot%202024-02-01%20at%206.25.26 AM.png" style="margin-top: 1rem;width: 100% !important;"></a>
                         <div class="py-4"><span class="badge bg-primary mb-2" style="background-color: #460000 !important;">Graduate &amp; Undergraduate Students</span>
                             <h4 class="fw-bold"><strong>Open Positions</strong></h4>
@@ -90,17 +90,11 @@
             </div>
         </div>
     </section>
-    <footer class="bg-primary-gradient" style="background: linear-gradient(45deg, #eaeaea 35%, #f6f6f6 35%, #f6f6f6 100%);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 offset-md-0 text-center text-lg-start d-flex flex-column"></div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"><img src="assets/img/Screenshot%202024-01-29%20at%205.03.40 PM.png" style="width: 90%;padding-top: 1rem;"></div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"><img src="assets/img/chem.jpg" style="width: 100%;padding-top: 1rem;"></div>
-                <div class="col-md-3 col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last"></div>
-            </div>
+    <footer class="bg-primary-gradient" style="/*background: linear-gradient(45deg, #fbfbfb 35%, #f6f6f6 35%, #ffffff 100%);*/box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="container py-4 py-lg-5" style="padding-top: 1rem!important;padding-bottom: 1rem!important;">
             <hr>
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2024</p>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3" style="padding-top: 0px !important;">
+                <p class="mb-0">Copyright © 2024</p><img src="assets/img/yajV7v-R_400x400.jpg" style="height: 5rem;">
             </div>
         </div>
     </footer>

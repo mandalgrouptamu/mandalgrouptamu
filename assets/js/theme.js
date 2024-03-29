@@ -46,4 +46,5 @@ function onloadBody(){
 
 function onLoadMainPage(){
     document.getElementById('mainBackground').style.height = window.innerHeight -  document.getElementById('mainNav').getBoundingClientRect().height + "px";
+    blurCards('card');
 }

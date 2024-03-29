@@ -16,3 +16,46 @@ function researchbg(img) {
         console.log(error)
     }
 }
+
+function blurCards(name){
+    $('.'+name).css('transition-duration', '0.5s')
+
+    $('.'+name).mouseover(
+    function() {
+    var cols = document.getElementsByClassName(name);
+    for(i = 0; i < cols.length; i++) {
+        cols[i].style.filter = 'blur(3px) grayscale(100%)';
+      }
+    var col = document.querySelectorAll( ":hover" ); 
+    
+    for(i = 0; i < col.length; i++) {
+        // console.log(col[i].className.search(name), col[i].className);
+        var numHover = 0;
+        if (col[i].className.search(name) != -1){
+            col[i].style.filter = 'blur(0px) grayscale(0%)';
+            numHover =  numHover + 1;
+        }
+        // if (numHover == 0){
+        //     $('.'+name).css('filter', 'blur(0px) grayscale(0%)');
+        // }
+    }
+    })
+
+    $('.'+name).mouseout(
+        function() {
+            var col = document.querySelectorAll( ":hover" ); 
+            for(i = 0; i < col.length; i++) {
+                var numHover = 0;
+                if (col[i].className.search(name) != -1){
+                    numHover =  numHover + 1;
+                }
+                if (numHover == 0){
+                    $('.'+name).css('filter', 'blur(0px) grayscale(0%)');
+                }
+            }
+        }
+    )
+
+}
+
+ 
