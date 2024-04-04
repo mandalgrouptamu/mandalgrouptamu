@@ -24,7 +24,7 @@ function blurCards(name){
     function() {
     var cols = document.getElementsByClassName(name);
     for(i = 0; i < cols.length; i++) {
-        cols[i].style.filter = 'blur(3px) grayscale(100%)';
+        cols[i].style.filter = 'blur(3px) grayscale(90%)';
       }
     var col = document.querySelectorAll( ":hover" ); 
     
