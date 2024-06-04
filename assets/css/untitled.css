@@ -276,12 +276,16 @@ label:active:after {
   background-color: #ffffff;
 }
 
-#publications .row .row:hover {
+/* #publications .row .row:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 125, 25, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.2);
-}
+} */
 
 .cu, .ur, .ncl, .vbu {
   /*font-family: 'Nanum Myeongjo', serif;*/
   font-family: Baskervville, serif;
+}
+
+.featured, .unfeatured {
+  transition-duration: 0.5s;
 }
 
